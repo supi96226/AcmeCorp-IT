@@ -1,6 +1,6 @@
 # This is a basic workflow to help you get started with Actions
 
-name: Voter Initialization CI
+name: Developer Initialization CI
 
 # Controls when the action will run. 
 on:

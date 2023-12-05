@@ -1,47 +1,47 @@
-package com.voter_api_master.voter_initialization.model;
+package com.developer_api_master.developer_initialization.model;
 import javax.persistence.*;
 import java.util.Date;
 
 @Entity
-@Table(name = "voter_table",catalog = "voter_db")
-public class VoterModel {
+@Table(name = "developer_table",catalog = "developer_db")
+public class DeveloperModel {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private long voterId;
-    private String voterName;
+    private long developerId;
+    private String developerName;
     private String address;
     private String city;
     private String state;
     private Date addedDate = new Date();
-    public VoterModel(){
+    public DeveloperModel(){
         super();
     }
 
-    public VoterModel(long voterId, String voterName, String address, String city,
+    public DeveloperModel(long developerId, String developerName, String address, String city,
                       String state, Date addedDate) {
-        this.voterId = voterId;
-        this.voterName = voterName;
+        this.developerId = developerId;
+        this.developerName = developerName;
         this.address = address;
         this.city = city;
         this.state = state;
         this.addedDate = addedDate;
     }
 
-    public long getVoterId() {
-        return voterId;
+    public long getDeveloperId() {
+        return developerId;
     }
 
-    public void setVoterId(long voterId) {
-        this.voterId = voterId;
+    public void setDeveloperId(long developerId) {
+        this.developerId = developerId;
     }
 
-    public String getVoterName() {
-        return voterName;
+    public String getDeveloperName() {
+        return developerName;
     }
 
-    public void setVoterName(String voterName) {
-        this.voterName = voterName;
+    public void setDeveloperName(String developerName) {
+        this.developerName = developerName;
     }
 
     public String getAddress() {
