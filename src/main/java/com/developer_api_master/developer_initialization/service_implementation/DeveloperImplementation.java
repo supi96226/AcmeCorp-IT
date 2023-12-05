@@ -22,10 +22,10 @@ public class DeveloperImplementation implements DeveloperInterface {
     @Override
     public DeveloperModel updateDeveloper(DeveloperModel developerModel) {
         DeveloperModel existingDeveloperModel = developerRepository.findById(developerModel.getDeveloperId()).orElse(null);
-        existingDeveloperModel.setDeveloperName(developerModel.getDeveloperName());
-        existingDeveloperModel.setCity(developerModel.getCity());
-        existingDeveloperModel.setAddress(developerModel.getAddress());
-        existingDeveloperModel.setState(developerModel.getState());
+        existingDeveloperModel.setNumPullRequests(developerModel.getNumPullRequests());
+        existingDeveloperModel.setAvgTimeMergeReq(developerModel.getAvgTimeMergeReq());
+        existingDeveloperModel.setNumIssuesClosed(developerModel.getNumIssuesClosed());
+        existingDeveloperModel.setNumProjects(developerModel.getNumProjects());
         existingDeveloperModel.setAddedDate(developerModel.getAddedDate());
         return developerRepository.save(existingDeveloperModel);
     }
