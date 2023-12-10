@@ -9,7 +9,7 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.voter_api_master</groupId>
-	<artifactId>voter_initialization</artifactId>
+	<artifactId>developer_initialization</artifactId>
 	<version>0.0.1</version>
 	<name>voter_initialization</name>
 	<description>voter initialization and management service</description>
