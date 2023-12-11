@@ -6,8 +6,8 @@ import java.util.Date;
 @Table(name = "developer_table",catalog = "developer_db")
 public class DeveloperModel {
 
-//    @Id
-//    @GeneratedValue(strategy = GenerationType.AUTO)
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private long developerId;
     private int numPullRequests;
     private float avgTimeMergeReq;
